@@ -7,5 +7,4 @@ import java.util.List;
 
 public interface SysUserRoleService {
     public List<SysUserRole> listByUserId(int userId);
-
 }

@@ -4,6 +4,6 @@ import com.example.usemybatis.entity.User;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserDao {
+public interface UserMapper {
     User getUser(int id);
 }

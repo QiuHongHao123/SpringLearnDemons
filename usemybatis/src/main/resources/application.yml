@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: q159487263
-    url: jdbc:mysql://localhost:3306/springboottest
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/springboottest?serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-@Service("userDetailsService")
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
     private SysUserService sysUserService;

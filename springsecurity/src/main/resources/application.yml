@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    username: root
+    password: q159487263
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/springsecurity?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springsecuritylearn.dao.SysUserDao">
+
+    <resultMap id="BaseResultMap" type="com.example.springsecuritylearn.entity.SysUser">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+
+    </resultMap>
+
+    <select id="getUserById" resultMap="BaseResultMap">
+        select * from sys_user where id = #{id}
+    </select>
+    <select id="getUserByName" resultMap="BaseResultMap">
+        select * from sys_user where name = #{name}
+    </select>
+
+</mapper>

@@ -3,9 +3,9 @@
 <mapper namespace="com.example.usemybatis.mapper.UserMapper">
 
     <resultMap id="BaseResultMap" type="com.example.usemybatis.entity.User">
-        <result column="id" jdbcType="INTEGER" property="id" />
-        <result column="name" jdbcType="VARCHAR" property="userName" />
-        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="userName"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
 
     </resultMap>
 

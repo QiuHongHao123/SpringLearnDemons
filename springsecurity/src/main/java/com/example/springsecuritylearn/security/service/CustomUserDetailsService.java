@@ -27,13 +27,14 @@ public class CustomUserDetailsService implements UserDetailsService {
     private SysRoleService sysRoleService;
     @Autowired
     private SysUserRoleService sysUserRoleService;
+
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 
         Collection<GrantedAuthority> authorities = new ArrayList<>();
 
-        SysUser sysUser=sysUserService.getUserByName(userName);
-        if(sysUser == null) {
+        SysUser sysUser = sysUserService.getUserByName(userName);
+        if (sysUser == null) {
             throw new UsernameNotFoundException("用户名不存在");
         }
         // 添加权限

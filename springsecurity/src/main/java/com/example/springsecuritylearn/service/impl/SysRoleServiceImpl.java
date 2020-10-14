@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class SysRoleServiceImpl implements SysRoleService {
     @Autowired
     SysRoleDao sysRoleDao;
+
     @Override
     public SysRole getRoleById(int id) {
         return sysRoleDao.getRoleById(id);

@@ -1,8 +1,6 @@
 package com.example.springsecuritylearn.controller;
 
 
-
-
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -46,7 +44,6 @@ public class LoginController {
     public String printUser() {
         return "如果你看见这句话，说明你有ROLE_USER角色";
     }
-
 
 
 }

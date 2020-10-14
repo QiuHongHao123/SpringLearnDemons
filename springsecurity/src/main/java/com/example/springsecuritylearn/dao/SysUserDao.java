@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SysUserDao {
     public SysUser getUserById(int id);
+
     public SysUser getUserByName(String name);
 
 }

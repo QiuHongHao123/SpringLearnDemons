@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface SysUserService {
     public SysUser getUserById(int id);
+
     public SysUser getUserByName(String name);
 
 }

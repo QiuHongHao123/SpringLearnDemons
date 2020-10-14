@@ -25,9 +25,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     //remember me 功能存储token进数据库然后对比
     @Autowired
     private DataSource dataSource;
+
     //注入 dataSource
     @Bean
-    public PersistentTokenRepository persistentTokenRepository(){
+    public PersistentTokenRepository persistentTokenRepository() {
         JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
         tokenRepository.setDataSource(dataSource);
         // 如果token表不存在，使用下面语句可以初始化该表；若存在，请注释掉这条语句，否则会报错。

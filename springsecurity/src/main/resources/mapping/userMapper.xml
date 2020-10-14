@@ -3,9 +3,9 @@
 <mapper namespace="com.example.springsecuritylearn.dao.SysUserDao">
 
     <resultMap id="BaseResultMap" type="com.example.springsecuritylearn.entity.SysUser">
-        <result column="id" jdbcType="INTEGER" property="id" />
-        <result column="name" jdbcType="VARCHAR" property="name" />
-        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
 
     </resultMap>
 

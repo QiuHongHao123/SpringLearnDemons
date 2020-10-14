@@ -5,7 +5,7 @@
         <result column="id" property="id" jdbcType="INTEGER"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
     </resultMap>
-    <select id="getRoleById" resultMap="BaseRoleType" >
+    <select id="getRoleById" resultMap="BaseRoleType">
         select * from sys_role where id = #{id}
     </select>
 </mapper>

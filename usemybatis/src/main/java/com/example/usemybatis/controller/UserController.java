@@ -15,9 +15,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class UserController {
     @Autowired
     private UserService userService;
+
     @RequestMapping("getUser/{id}")
-    public String GetUser(Model model, @PathVariable int id){
-        model.addAttribute("message",userService.GetUser(id).toString());
+    public String GetUser(Model model, @PathVariable int id) {
+        model.addAttribute("message", userService.GetUser(id).toString());
         return "/user";
     }
 }
